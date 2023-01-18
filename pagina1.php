@@ -1,6 +1,6 @@
 <?php
 
-/* Cmbios */
+/* Cmbis */
 
 ?>
 
