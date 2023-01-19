@@ -2,6 +2,7 @@
 
 error_reporting(0);
 $aviso = $_GET['aviso'];
+$long = $_GET['long'];
 
 ?>
 
@@ -17,6 +18,9 @@ $aviso = $_GET['aviso'];
 		<?php     
                     if ($aviso=='true'){
                     echo "<p class=aviso>Credenciales inválidos</p>";
+                    }
+                    if ($long=='true'){
+                    echo "<p class=aviso>La clave debe tener entre 5 y 15 caracteres</p>";
                     }
                 ?>
 		<form action = 'pagina2.php' method = "POST">

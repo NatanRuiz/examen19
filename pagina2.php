@@ -13,9 +13,8 @@
         header('location:https://localhost/PPS/PhpProject1/pagina1.php?aviso=true');
     }     
  }
- else {
-     echo "La clave debe tener entre 5 y 15 caracteres<br><br>"; 
-     echo 'Pulse aquí para <a href="https://localhost/PPS/PhpProject1/pagina1.php">intentarlo de nuevo</a>';
+ else { 
+      header('location:https://localhost/PPS/PhpProject1/pagina1.php?long=true');
  }
 
 ?>
