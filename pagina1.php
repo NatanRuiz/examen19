@@ -1,6 +1,7 @@
 <?php
 
-/* Cmbis */
+error_reporting(0);
+$aviso = $_GET['aviso'];
 
 ?>
 
@@ -13,9 +14,11 @@
                 <link href="estilos.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>	
-		<?php if(isset($aviso)){
-			echo "<p class=aviso>$aviso</p>";
-		}?>
+		<?php     
+                    if ($aviso=='true'){
+                    echo "<p class=aviso>Credenciales inválidos</p>";
+                    }
+                ?>
 		<form action = 'pagina2.php' method = "POST">
 			<label for = "usuario">Usuario</label> 
 			<input value = "<?php ?>"
@@ -24,5 +27,6 @@
 			<input id = "clave" name = "clave" type = "password">					
 			<input type = "submit">
 		</form>
+                
 	</body>
 </html>
